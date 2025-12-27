@@ -56,31 +56,11 @@ const Index = () => {
         ))}
 
         {/* Footer section */}
-        <footer className="relative py-24 bg-background">
+        <footer className="relative py-8 bg-background">
           <div className="container mx-auto px-6 text-center">
-            <div className="mb-8">
-              <div className="w-16 h-px bg-primary mx-auto mb-4" />
-              <div className="w-1.5 h-1.5 rounded-full bg-primary mx-auto" />
-              <div className="w-16 h-px bg-primary mx-auto mt-4" />
-            </div>
-            
-            <h2 className="font-display text-3xl md:text-4xl font-light text-foreground mb-4 tracking-wide">
-              Get In Touch
-            </h2>
-            <p className="font-body text-muted-foreground font-light tracking-wider mb-8">
-              Let's create something extraordinary together
+            <p className="font-body text-xs text-muted-foreground/60 tracking-widest uppercase">
+              © 2024 Company Name. All Rights Reserved.
             </p>
-            
-            <div className="flex flex-col items-center gap-2 text-muted-foreground font-body text-sm tracking-wider">
-              <p>info@company.com</p>
-              <p>+1 (234) 567-890</p>
-            </div>
-
-            <div className="mt-16 pt-8 border-t border-border/30">
-              <p className="font-body text-xs text-muted-foreground/60 tracking-widest uppercase">
-                © 2024 Company Name. All Rights Reserved.
-              </p>
-            </div>
           </div>
         </footer>
       </main>
