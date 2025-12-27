@@ -38,7 +38,7 @@ const ImageSection = ({ imageSrc, alt, title, subtitle, index }: ImageSectionPro
       className="relative min-h-screen w-full flex items-center justify-center overflow-hidden"
     >
       {/* Background overlay */}
-      <div className="absolute inset-0 bg-gradient-to-b from-transparent via-background/20 to-background z-10" />
+      <div className="absolute inset-0 bg-gradient-to-b from-transparent via-background/10 to-background/40 z-10 pointer-events-none" />
       
       {/* Image container with zoom effect */}
       <div 
