@@ -8,7 +8,13 @@ interface ImageSectionProps {
   index: number;
 }
 
-const ImageSection = ({ imageSrc, alt, title, subtitle, index }: ImageSectionProps) => {
+const ImageSection = ({
+  imageSrc,
+  alt,
+  title,
+  subtitle,
+  index,
+}: ImageSectionProps) => {
   const sectionRef = useRef<HTMLDivElement>(null);
   const [isVisible, setIsVisible] = useState(false);
 
@@ -39,10 +45,10 @@ const ImageSection = ({ imageSrc, alt, title, subtitle, index }: ImageSectionPro
     >
       {/* Background overlay */}
       <div className="absolute inset-0 bg-gradient-to-b from-transparent via-background/10 to-background/40 z-10 pointer-events-none" />
-      
+
       {/* Image container with smooth parallax effect */}
-      <div 
-        className={`absolute inset-0 transition-all duration-[1.2s] ease-out ${
+      <div
+        className={`absolute inset-0 flex justify-center items-center transition-all duration-[1.2s] ease-out ${
           isVisible ? "scale-100 opacity-100" : "scale-105 opacity-0"
         }`}
         style={{ transitionDelay: `${index * 50}ms` }}
@@ -51,13 +57,13 @@ const ImageSection = ({ imageSrc, alt, title, subtitle, index }: ImageSectionPro
           src={imageSrc}
           alt={alt}
           loading="lazy"
-          className="w-full h-full object-cover"
+          className="w-auto h-auto max-w-full max-h-full object-contain"
         />
       </div>
 
       {/* Content overlay */}
       {(title || subtitle) && (
-        <div 
+        <div
           className={`relative z-20 text-center px-6 max-w-4xl transition-all duration-700 ${
             isVisible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-10"
           }`}
@@ -73,9 +79,9 @@ const ImageSection = ({ imageSrc, alt, title, subtitle, index }: ImageSectionPro
               {subtitle}
             </p>
           )}
-          
+
           {/* Decorative gold line */}
-          <div 
+          <div
             className={`mt-8 mx-auto h-px bg-gradient-to-r from-transparent via-primary to-transparent transition-all duration-1000 ${
               isVisible ? "w-32 opacity-100" : "w-0 opacity-0"
             }`}
@@ -85,7 +91,7 @@ const ImageSection = ({ imageSrc, alt, title, subtitle, index }: ImageSectionPro
       )}
 
       {/* Gold accent border */}
-      <div 
+      <div
         className={`absolute bottom-0 left-0 right-0 h-px bg-gradient-to-r from-transparent via-primary/30 to-transparent transition-opacity duration-1000 ${
           isVisible ? "opacity-100" : "opacity-0"
         }`}

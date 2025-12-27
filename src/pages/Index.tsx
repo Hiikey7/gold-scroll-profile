@@ -6,62 +6,96 @@ import ScrollToTopButton from "@/components/ScrollToTopButton";
 
 // Placeholder images - replace these with your actual company profile images
 const profileImages = [
-  { src: "https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?w=1920&q=80", alt: "Corporate headquarters" },
-  { src: "https://images.unsplash.com/photo-1497366216548-37526070297c?w=1920&q=80", alt: "Modern office" },
-  { src: "https://images.unsplash.com/photo-1560179707-f14e90ef3623?w=1920&q=80", alt: "Team collaboration" },
-  { src: "https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?w=1920&q=80", alt: "Business meeting" },
-  { src: "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=1920&q=80", alt: "Global operations" },
-  { src: "https://images.unsplash.com/photo-1600880292203-757bb62b4baf?w=1920&q=80", alt: "Team discussion" },
-  { src: "https://images.unsplash.com/photo-1553028826-f4804a6dba3b?w=1920&q=80", alt: "Office workspace" },
-  { src: "https://images.unsplash.com/photo-1504384308090-c894fdcc538d?w=1920&q=80", alt: "Tech workspace" },
-  { src: "https://images.unsplash.com/photo-1556761175-4b46a572b786?w=1920&q=80", alt: "Professional team" },
-  { src: "https://images.unsplash.com/photo-1521737711867-e3b97375f902?w=1920&q=80", alt: "Creative meeting" },
-  { src: "https://images.unsplash.com/photo-1542744173-8e7e53415bb0?w=1920&q=80", alt: "Conference room" },
-  { src: "https://images.unsplash.com/photo-1552664730-d307ca884978?w=1920&q=80", alt: "Strategy session" },
-  { src: "https://images.unsplash.com/photo-1557804506-669a67965ba0?w=1920&q=80", alt: "Business presentation" },
-  { src: "https://images.unsplash.com/photo-1531973576160-7125cd663d86?w=1920&q=80", alt: "Innovation hub" },
-  { src: "https://images.unsplash.com/photo-1519389950473-47ba0277781c?w=1920&q=80", alt: "Tech team" },
-  { src: "https://images.unsplash.com/photo-1522071820081-009f0129c71c?w=1920&q=80", alt: "Collaborative work" },
-  { src: "https://images.unsplash.com/photo-1553877522-43269d4ea984?w=1920&q=80", alt: "Modern design" },
-  { src: "https://images.unsplash.com/photo-1497215842964-222b430dc094?w=1920&q=80", alt: "Office building" },
-  { src: "https://images.unsplash.com/photo-1559136555-9303baea8ebd?w=1920&q=80", alt: "Business growth" },
-  { src: "https://images.unsplash.com/photo-1573164713988-8665fc963095?w=1920&q=80", alt: "Executive office" },
+  { src: "public/1.jpg", alt: "Corporate headquarters" },
+  { src: "public/2.jpg", alt: "Team collaboration" },
+  { src: "public/3.jpg", alt: "Innovative solutions" },
+  { src: "public/4.jpg", alt: "Global reach" },
+  { src: "public/5.jpg", alt: "Customer success" },
+  { src: "public/6.jpg", alt: "Customer success" },
+  { src: "public/7.jpg", alt: "Customer success" },
+  { src: "public/8.jpg", alt: "Customer success" },
+  { src: "public/9.jpg", alt: "Customer success" },
+  { src: "public/10.jpg", alt: "Customer success" },
+  { src: "public/11.jpg", alt: "Customer success" },
+  { src: "public/12.jpg", alt: "Customer success" },
+  { src: "public/13.jpg", alt: "Customer success" },
+  { src: "public/14.jpg", alt: "Customer success" },
+  { src: "public/15.jpg", alt: "Customer success" },
+  { src: "public/16.jpg", alt: "Customer success" },
+  { src: "public/17.jpg", alt: "Customer success" },
+  { src: "public/18.jpg", alt: "Customer success" },
+  { src: "public/19.jpg", alt: "Customer success" },
+  { src: "public/20.jpg", alt: "Customer success" },
+  { src: "public/21.jpg", alt: "Customer success" },
+  { src: "public/22.jpg", alt: "Customer success" },
+  { src: "public/23.jpg", alt: "Customer success" },
 ];
 
 const Index = () => {
   return (
     <>
       <Helmet>
-        <title>Company Name | Premium Business Solutions</title>
-        <meta name="description" content="Discover our company profile - where excellence meets innovation. Building tomorrow's legacy today with dedicated professionals and global reach." />
+        <title>Mazika | Design & Build . Estate Managers</title>
+        <meta
+          name="description"
+          content="Discover Mazika - Design & Build . Estate Managers. Building tomorrow's legacy today with dedicated professionals and global reach."
+        />
       </Helmet>
 
       <main className="relative">
         {/* Floating buttons */}
         <ScrollToTopButton />
-        <WhatsAppButton phoneNumber="1234567890" />
+        <a
+          href="/maziki.pdf"
+          download
+          className="fixed right-6 bottom-20 z-50 flex items-center gap-3 px-5 py-3 bg-primary text-primary-foreground font-body font-medium text-sm rounded-full shadow-[0_0_15px_hsl(var(--primary)/0.4)] transition-all duration-300 hover:scale-105 hover:shadow-[0_0_20px_hsl(var(--primary)/0.6)] group"
+          aria-label="Download PDF"
+        >
+          <svg viewBox="0 0 24 24" fill="currentColor" className="w-5 h-5">
+            <path d="M14,2H6A2,2 0 0,0 4,4V20A2,2 0 0,0 6,22H18A2,2 0 0,0 20,20V8L14,2M18,20H6V4H13V9H18V20Z" />
+          </svg>
+          <span className="hidden sm:inline">Download PDF</span>
+        </a>
+        <WhatsAppButton
+          phoneNumber="254719757416"
+          message="Hello, I would like"
+        />
 
         {/* Hero Section */}
-        <HeroSection 
-          companyName="COMPANY NAME" 
-          tagline="Excellence • Innovation • Legacy" 
+        <HeroSection
+          companyName="Mazika"
+          tagline="Design & Build . Estate Managers"
         />
 
         {/* Scrolling image sections */}
-        {profileImages.map((image, index) => (
-          <ImageSection
-            key={index}
-            imageSrc={image.src}
-            alt={image.alt}
-            index={index}
-          />
-        ))}
+        <div className="grid grid-cols-1">
+          {profileImages.map((image, index) => (
+            <img
+              key={index}
+              src={image.src}
+              alt={image.alt}
+              className="w-full h-auto object-contain"
+              loading="lazy"
+            />
+          ))}
+        </div>
 
         {/* Footer section */}
         <footer className="relative py-8 bg-background">
           <div className="container mx-auto px-6 text-center">
             <p className="font-body text-xs text-muted-foreground/60 tracking-widest uppercase">
-              © 2024 Company Name. All Rights Reserved.
+              © 2026 Mazika. All Rights Reserved.
+            </p>
+            <p className="font-body text-xs text-muted-foreground/40 tracking-wider mt-2">
+              Powered by{" "}
+              <a
+                href="https://stanpixels.co.ke"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="hover:text-primary transition-colors"
+              >
+                stanpixels
+              </a>
             </p>
           </div>
         </footer>
