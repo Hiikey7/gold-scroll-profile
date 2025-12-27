@@ -48,7 +48,7 @@ const ImageSection = ({
 
       {/* Image container with smooth parallax effect */}
       <div
-        className={`absolute inset-0 flex justify-center items-center transition-all duration-[1.2s] ease-out ${
+        className={`absolute inset-0 flex justify-center items-center transition-all duration-[1200ms] ease-out ${
           isVisible ? "scale-100 opacity-100" : "scale-105 opacity-0"
         }`}
         style={{ transitionDelay: `${index * 50}ms` }}
