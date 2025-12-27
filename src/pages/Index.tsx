@@ -6,7 +6,7 @@ import ScrollToTopButton from "@/components/ScrollToTopButton";
 
 // Placeholder images - replace these with your actual company profile images
 const profileImages = [
-  { src: "public/1.jpg", alt: "Corporate headquarters" },
+  { src: "gold-scroll-profile/public/1.jpg", alt: "Corporate headquarters" },
   { src: "public/2.jpg", alt: "Team collaboration" },
   { src: "public/3.jpg", alt: "Innovative solutions" },
   { src: "public/4.jpg", alt: "Global reach" },
