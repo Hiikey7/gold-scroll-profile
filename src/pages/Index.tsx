@@ -8,32 +8,22 @@ const profileImages = [
   {
     src: "https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?w=1920&q=80",
     alt: "Corporate headquarters exterior",
-    title: "Our Vision",
-    subtitle: "Building tomorrow's legacy today",
   },
   {
     src: "https://images.unsplash.com/photo-1497366216548-37526070297c?w=1920&q=80",
     alt: "Modern office interior",
-    title: "Excellence",
-    subtitle: "Where innovation meets tradition",
   },
   {
     src: "https://images.unsplash.com/photo-1560179707-f14e90ef3623?w=1920&q=80",
     alt: "Team collaboration",
-    title: "Our Team",
-    subtitle: "Dedicated professionals, exceptional results",
   },
   {
     src: "https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?w=1920&q=80",
     alt: "Business meeting",
-    title: "Partnership",
-    subtitle: "Growing together towards success",
   },
   {
     src: "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=1920&q=80",
     alt: "Global operations",
-    title: "Global Reach",
-    subtitle: "Connecting opportunities worldwide",
   },
 ];
 
@@ -61,8 +51,6 @@ const Index = () => {
             key={index}
             imageSrc={image.src}
             alt={image.alt}
-            title={image.title}
-            subtitle={image.subtitle}
             index={index}
           />
         ))}
