@@ -40,17 +40,18 @@ const ImageSection = ({ imageSrc, alt, title, subtitle, index }: ImageSectionPro
       {/* Background overlay */}
       <div className="absolute inset-0 bg-gradient-to-b from-transparent via-background/10 to-background/40 z-10 pointer-events-none" />
       
-      {/* Image container with zoom effect */}
+      {/* Image container with smooth parallax effect */}
       <div 
-        className={`absolute inset-0 transition-all duration-1000 ease-out ${
-          isVisible ? "scale-100 opacity-100" : "scale-110 opacity-0"
+        className={`absolute inset-0 transition-all duration-[1.2s] ease-out ${
+          isVisible ? "scale-100 opacity-100" : "scale-105 opacity-0"
         }`}
-        style={{ transitionDelay: `${index * 100}ms` }}
+        style={{ transitionDelay: `${index * 50}ms` }}
       >
         <img
           src={imageSrc}
           alt={alt}
-          className="w-full h-full object-cover image-zoom"
+          loading="lazy"
+          className="w-full h-full object-cover"
         />
       </div>
 
